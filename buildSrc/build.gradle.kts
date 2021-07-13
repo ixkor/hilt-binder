@@ -18,10 +18,6 @@ plugins {
     `kotlin-dsl`
 }
 
-kotlinDslPluginOptions {
-    experimentalWarning.set(false)
-}
-
 repositories {
     mavenCentral()
     google()
@@ -29,5 +25,5 @@ repositories {
 
 dependencies {
     implementation("com.android.tools.build:gradle:4.2.0")
-    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.10")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21")
 }
