@@ -16,7 +16,7 @@
 
 apply(plugin = PLUGIN_JAVA_LIBRARY)
 apply(plugin = PLUGIN_MAVEN_PUBLISH)
-apply(plugin = PLUGIN_SIGNING)
+//apply(plugin = PLUGIN_SIGNING)
 apply(plugin = PLUGIN_DOKKA)
 
 project.group = publishingConfig.artifactGroupId
@@ -87,12 +87,12 @@ configure<PublishingExtension> {
     }
 }
 
-configure<SigningExtension> {
-    val pubExt = checkNotNull(extensions.findByType(PublishingExtension::class.java))
-    val publication = pubExt.publications[publishingConfig.mavenPublicationName]
-
-    sign(publication)
-}
+//configure<SigningExtension> {
+//    val pubExt = checkNotNull(extensions.findByType(PublishingExtension::class.java))
+//    val publication = pubExt.publications[publishingConfig.mavenPublicationName]
+//
+//    sign(publication)
+//}
 
 tasks {
     named<Javadoc>("javadoc") {

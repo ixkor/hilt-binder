@@ -33,8 +33,8 @@ object appConfig {
 
 object publishingConfig {
 
-    const val artifactGroupId = "com.paulrybitskyi"
-    const val artifactWebsite = "https://github.com/mars885/hilt-binder"
+    const val artifactGroupId = "com.github.ixkor.hilt-binder"
+    const val artifactWebsite = "https://github.com/ixkor/hilt-binder"
 
     const val mavenPublicationName = "release"
 
@@ -69,7 +69,7 @@ object versions {
     const val detektPlugin = "1.20.0"
     const val ktlintPlugin = "10.3.0"
     const val gradleVersionsPlugin = "0.42.0"
-    const val dokkaPlugin = "1.7.0"
+    const val dokkaPlugin = "1.5.31" // task fails with 1.7.0
     const val shadowPlugin = "7.1.2"
     const val appCompat = "1.4.2"
     const val navigation = "2.5.1"
